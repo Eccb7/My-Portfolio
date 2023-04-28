@@ -147,22 +147,23 @@ a {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
+  width: 200px;
   color: #172b4d;
 }
 
 .canopy {
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
-  width: 70%;
-  height: 32px;
+  width: 90%;
+  height: 30px;
   flex-wrap: wrap;
   margin: 20px 5px;
 }
 
 .canopy li {
-  display: inline-block;
-  padding: 5px;
+  padding: 4px;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
