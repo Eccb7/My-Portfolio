@@ -179,7 +179,8 @@ a {
 }
 
 .work-tools {
-  float: left;
+  display: flex;
+  align-items: center;
   gap: 8px;
   width: 30%;
   height: 24px;
