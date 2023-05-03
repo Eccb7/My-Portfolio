@@ -179,8 +179,7 @@ a {
 }
 
 .work-tools {
-  display: flex;
-  align-items: center;
+  float: left;
   gap: 8px;
   width: 30%;
   height: 24px;
