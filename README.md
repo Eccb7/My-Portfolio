@@ -23,6 +23,7 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -125,7 +126,10 @@ To run tests, run the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
 
+- [ ] **It will be able to refer other to my actual projects**
+- [ ] **It will have my downloadable resume**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
