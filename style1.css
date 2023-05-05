@@ -10,8 +10,8 @@
 
 html {
   position: absolute;
-  width: 375px;
-  height: 1263px;
+  width: 100%;
+  height: 100%;
   left: 1px;
   top: 1px;
   background: #fff;
@@ -389,4 +389,286 @@ textarea::placeholder {
 
 .cont {
   margin: 20px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 66px;
+    box-shadow: 0 1px 10px -5px grey;
+    position: fixed;
+    height: 72px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .menu-bar {
+    display: none;
+  }
+
+  .nav-list {
+    margin-left: initial;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    text-transform: capitalize;
+  }
+
+  .nav-list .nav-content a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .nav-list .nav-content a:hover {
+    text-decoration: underline;
+    color: #6070ff;
+    transition: 0.1s;
+    font-weight: bold;
+  }
+
+  .hero-section {
+    background-image: url(/images1/Header-bg.svg);
+    background-size: 100% 691.46px;
+    background-position-x: right;
+    padding-top: 8rem;
+    padding-bottom: 9rem;
+    height: 846px;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    gap: 20px;
+  }
+
+  #name {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    margin: 20px 0;
+    height: 50px;
+  }
+
+  .details {
+    width: 64%;
+  }
+
+  #work-section-mobile {
+    display: none;
+  }
+
+  #work-section-desktop {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    margin-top: 46px;
+  }
+
+  .project {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 36px;
+    max-width: initial;
+  }
+
+  .project:hover {
+    cursor: pointer;
+    border: 2px solid #a7aeff;
+  }
+
+  .work-img {
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+
+  .work-img img {
+    width: 100%;
+  }
+
+  .work-tools {
+    width: 108%;
+  }
+
+  .work-description {
+    margin-right: 1rem;
+  }
+
+  .work-tools li {
+    padding: 4px 4px;
+  }
+
+  .work-details {
+    height: auto;
+  }
+
+  .two {
+    flex-direction: row-reverse;
+  }
+
+  #about {
+    flex-direction: row;
+    margin: auto;
+    padding: 7rem 3rem;
+  }
+
+  .about-container {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .about-details {
+    font-size: 16px;
+    width: 80%;
+    margin: 30px 0;
+  }
+
+  .mobile {
+    margin-top: -0.5em;
+  }
+
+  .skills {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .language-list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .language-list li {
+    flex-direction: column;
+    width: 122px;
+    align-items: flex-start;
+  }
+
+  .contact-container {
+    background-image: url(images1/contact\ form\ background\ shapes@2x.svg);
+    border-top-left-radius: 150px;
+    background-size: 100% 632.79px;
+    min-height: 718.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-container p {
+    width: 70%;
+  }
+
+  .form-items,
+  textarea {
+    width: 30rem;
+    border-radius: 2px;
+  }
+
+  .deliver {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    width: 142px;
+    height: 48px;
+    background: #fff;
+    border-radius: 8px;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    color: #6070ff;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hero-container {
+    margin-top: 150px;
+  }
+
+  .work-img {
+    flex: 1;
+  }
+
+  .work-description {
+    flex: 1;
+    gap: 1px;
+  }
+
+  .work-title {
+    font-size: 40px;
+  }
+
+  .canopy {
+    gap: 1rem;
+    width: 93%;
+  }
+
+  .canopy li {
+    font-size: 18px;
+  }
+
+  .work-details {
+    width: 77%;
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+  .work-tools {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .work-tools li {
+    padding: 0 12px;
+  }
+
+  .contact-container p {
+    width: 56%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .canopy {
+    width: 63%;
+  }
+
+  .work-description {
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+
+  .contact-container p {
+    width: 42%;
+  }
 }
