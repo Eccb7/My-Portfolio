@@ -6,15 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 1px;
-  top: 1px;
-  background: #fff;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +17,8 @@ body {
 a {
   text-decoration: none;
 }
+
+/* Nav Bar start here */
 
 #navigation {
   display: flex;
@@ -53,10 +47,14 @@ a {
   cursor: pointer;
 }
 
+.nav-list {
+  display: none;
+}
+
 .hero-section {
   background: #fff;
   padding: 1em 1em;
-  background-image: url(/images1/header-shapes\ mobile@2x.svg);
+  background-image: url(/images/header-shapes\ mobile@2x.svg);
   background-size: 100% auto;
   background-position: center;
   border-bottom-left-radius: 90px;
@@ -79,7 +77,8 @@ a {
 
 .details {
   width: 95%;
-  height: 146px;
+
+  /* height: 146px; */
   margin-top: 1em;
   font-weight: 400;
   font-size: 16px;
@@ -109,7 +108,12 @@ a {
   margin-top: 1.5em;
 }
 
-#work-section {
+.icons:hover {
+  transform: translateY(10px);
+  transition: 0.5s;
+}
+
+#work-section-mobile {
   width: 95%;
   margin: auto;
   display: grid;
@@ -119,6 +123,10 @@ a {
   align-items: center;
   margin-top: 46px;
   padding: 1em 1em;
+}
+
+#work-section-desktop {
+  display: none;
 }
 
 .project {
@@ -147,27 +155,30 @@ a {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  width: 200px;
   color: #172b4d;
 }
 
 .canopy {
   display: flex;
-  gap: 1rem;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  height: 30px;
-  flex-wrap: wrap;
-  margin: 20px 5px;
+  width: 83%;
+  height: 32px;
+  padding: 0;
+  margin: 12px 0;
 }
 
 .canopy li {
-  padding: 4px;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
+  list-style: none;
+}
+
+.canopy li:not(:first-child)::before {
+  content: url(/images/ball.svg);
+  padding-right: 10px;
 }
 
 .work-details {
@@ -189,11 +200,21 @@ a {
 }
 
 .work-tools li {
-  padding: 0 12px;
+  margin-right: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  background: #ebebff;
+  padding: 4px 12px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+
+  /* padding: 3px 12px;
   color: #6070ff;
   height: 24px;
   background: #ebebff;
-  border-radius: 8px;
+  border-radius: 8px; */
 }
 
 .btn {
@@ -211,12 +232,12 @@ a {
   color: #396df2;
   margin-bottom: 10px;
   cursor: pointer;
-  transition: background-color 2s;
+  transition: 0.15s;
 }
 
 .btn:hover {
   color: #fff;
-  background-color: #6070ff;
+  background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
@@ -248,7 +269,6 @@ a {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  align-items: center;
   color: #172b4d;
   margin-bottom: 10px;
 }
@@ -256,7 +276,7 @@ a {
 .about-details {
   width: 95%;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 24px;
   color: #344563;
   margin-bottom: 10px;
@@ -300,6 +320,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   padding: 10px;
+  gap: 20px;
 }
 
 .canopy li:first-child {
@@ -321,12 +342,12 @@ a {
 }
 
 #contact-form {
-  background-color: #fff;
+  background: #fff;
 }
 
 .contact-container {
   background: #6070ff;
-  background-image: url(/images1/contact\ form\ shapes-mobile.svg);
+  background-image: url(/images/contact\ form\ shapes-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
@@ -349,8 +370,7 @@ a {
   line-height: 27px;
   text-align: center;
   padding: 20px;
-  transition: transform 3s;
-  font-weight: 400px;
+  font-weight: 400;
   color: #ebebff;
 }
 
@@ -391,6 +411,7 @@ textarea::placeholder {
   margin: 20px 0;
 }
 
+/* desktop view */
 @media only screen and (min-width: 768px) {
   #navigation {
     display: flex;
@@ -435,7 +456,7 @@ textarea::placeholder {
   }
 
   .hero-section {
-    background-image: url(/images1/Header-bg.svg);
+    background-image: url(/images/Header-bg.svg);
     background-size: 100% 691.46px;
     background-position-x: right;
     padding-top: 8rem;
@@ -451,19 +472,27 @@ textarea::placeholder {
     width: 70%;
     margin: auto;
     margin-top: 100px;
-    gap: 20px;
+    gap: 50px;
   }
 
   #name {
     font-size: 48px;
     line-height: 60px;
-    letter-spacing: 0.38px;
-    margin: 20px 0;
+    letter-spacing: 0.37px;
+    margin: 10px 0;
     height: 50px;
   }
 
   .details {
     width: 64%;
+  }
+
+  .connect {
+    transform: translateY(-2rem);
+  }
+
+  .socials {
+    margin-top: -3.5em;
   }
 
   #work-section-mobile {
@@ -562,7 +591,7 @@ textarea::placeholder {
   }
 
   .contact-container {
-    background-image: url(images1/contact\ form\ background\ shapes@2x.svg);
+    background-image: url(/images/contact\ form\ background\ shapes@2x.svg);
     border-top-left-radius: 150px;
     background-size: 100% 632.79px;
     min-height: 718.7px;
@@ -587,27 +616,8 @@ textarea::placeholder {
     justify-content: center;
   }
 
-  .btn-cont {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 16px;
+  .cont {
     width: 142px;
-    height: 48px;
-    background: #fff;
-    border-radius: 8px;
-    flex: none;
-    order: 3;
-    flex-grow: 0;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    line-height: 24px;
-    color: #6070ff;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
   }
 }
 

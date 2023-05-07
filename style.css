@@ -54,12 +54,12 @@ a {
 .hero-section {
   background: #fff;
   padding: 1em 1em;
-  background-image: url(/images/header-shapes\ mobile@2x.svg);
+  background-image: url(images/header-shapes\ mobile@2x.svg);
   background-size: 100% auto;
   background-position: center;
   border-bottom-left-radius: 90px;
   background-repeat: no-repeat;
-  min-height: 587.15px;
+  min-height: 587.16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -177,7 +177,7 @@ a {
 }
 
 .canopy li:not(:first-child)::before {
-  content: url(/images/ball.svg);
+  content: url(images/ball.svg);
   padding-right: 10px;
 }
 
@@ -347,7 +347,7 @@ a {
 
 .contact-container {
   background: #6070ff;
-  background-image: url(/images/contact\ form\ shapes-mobile.svg);
+  background-image: url(images/contact\ form\ shapes-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: right;
@@ -456,7 +456,7 @@ textarea::placeholder {
   }
 
   .hero-section {
-    background-image: url(/images/Header-bg.svg);
+    background-image: url(images/Header-bg.svg);
     background-size: 100% 691.46px;
     background-position-x: right;
     padding-top: 8rem;
@@ -591,7 +591,7 @@ textarea::placeholder {
   }
 
   .contact-container {
-    background-image: url(/images/contact\ form\ background\ shapes@2x.svg);
+    background-image: url(images/contact\ form\ background\ shapes@2x.svg);
     border-top-left-radius: 150px;
     background-size: 100% 632.79px;
     min-height: 718.7px;
